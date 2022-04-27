@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- Aquí va el encabezado del sitio web -->
+        <h1>
+            Conoce sobre el HTML: Flex Box, Listas y enlaces 
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Temas
+                <ul>
+                    <li>Flex Box</li>
+                    <li>Listas y Enlaces</li>
+                </ul>
+            </li>
+            <li>Recursos Digitales
+                <ul>
+                   <li>Recurso 1</li>
+                   <li>Recurso 2</li>
+                </ul>
+            </li>
+            <li>Aprendizaje
+                <ul>
+                    <li>Actividad 1</li>
+                    <li>Actividad 2</li>
+                </ul>
+            </li>
+
+            <li>Acerca de
+                <ul>
+                    <li>Autor</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Propósito del sitio</h2>
+        <p>
+           Este sitio web ha sido creado con el propósito de promover el conocimiento sobre el HTML, nos enfocaremos principalmente en el aprendizaje del Flex Box y de las Listas y enlaces.  
+        </p>
+        <article>
+            <h3>Flex Box</h3>
+            <p>
+                Flex box tiene como objetivo ser una manera más eficiente de crear diseños, alinear y distribuir espacios entre ítems en un contenedor, incluso cuando las dimensiones de esos ítems son desconocidas y/o dinámicas (por esto el termino flex).
+                <ul>
+                    <h4>Qué es el Flex box</h4>
+                    <p>La herramienta Flex box (de Flexible Box) fue creada para hacer algunas tareas básicas en un diseño, de manera más sencilla y funcional: los secundarios de un elemento con Flex box se pueden posicionar en cualquier dirección y pueden tener dimensiones flexibles para adaptarse.</p>
+                </ul>
+
+                <ul>
+                    <h4>Elementos</h4>
+                    <p>Flex box es un módulo completo; algunos de ellos deben declararse en el contenedor (el elemento principal, que llamamos flex container), mientras que otros deben declararse en los elementos secundarios (el flex ítems). Si el diseño "estandar" se basa en las direcciones block e inline, el diseño Flex se basa en direcciones de "flex flow"</p>
+                </ul>
+            </p>
+            <img src="img/Flexbox.PNG" alt="imagen de flexbox">
+            
+            <p> Los ítems se distribuirán en el diseño siguiendo el eje principal o transversal
+                <ul><li>Eje principal</li>
+                    <p>
+                        El eje principal de un flex container es el eje primario, a lo largo de él son insertados los flex ítems. 
+                        El eje principal no es necesariamente horizontal, dependerá de la propiedad flex-direction.
+                    </p>
+
+                    <li>Main-start / Main-end</li>
+                    <p>Los flex ítems se insertan en el contenedor comenzando por el lado start, dirigiendose hacia el lado end.</p>
+
+                    <li>Tamaño principal</li>
+                    <p>El ancho o alto de un flex ítem, dependiendo de la dirección del contenedor, es el tamaño principal del ítem. La propiedad de tamaño principal de unn flex ítem puede ser tanto width como height, dependiendo de cuál este en la dirección principal.</p>
+
+                    <li>Eje transversal</li>
+                    <p>El eje perpendicular al eje principal se denomina eje transversal. Su dirección depende de la dirección del eje principal.</p>
+
+                    <li>Cross-start / Cross-end</li>
+                    <p>Líneas flex se llenan con ítems y se agregan al contenedor,empezando desde el lado cross start del flex container hacia el lado cross end.</p>
+
+                    <li>Cross size</li>
+                    <p>El ancho o alto de un flex ítem dependiendo de lo que haya en la dimensión transversal, es el cross size del ítem.</p>
+                </ul>
+
+                <ul>
+                    <h4>Flex container</h4>
+                    <p>Es el elemento que involucra su estructura. Definimos que un elemento es un Flex Container con la propiedad display y valores flex o inline-flex.</p>
+
+                    <h4>Flex Ítem</h4>
+                    <p>Son elementos secundarios del flex container.</p>
+
+                    <h4>Ejes o Axes</h4>
+                    <p>Son las dos direcciones básicas que existen en un Flex Container: main axis, o eje principal, y cross axis, o eje transversal.</p>
+                </ul>
+            </p>
+        </article>
+
+        <article>
+            <h3>Listas y Enlaces</h3>
+            <ul><h3>Listas</h3>
+                <h4>Listas ordenadas</h4>
+                
+                    
+                        <ul>
+                              <li>Ordenan la lista anteponiendo números, letras o signos</li>
+                              <li>Comienzan con la etiqueta ol</li>
+                              <li>Para cada uno de los elementos se utiliza la etiqueta li</li>
+                        </ul>  
+                     
+                        
+                               Ejemplo: <br>
+                               Ciencias más importantes: <br>
+                               <ol>
+                                    <li>Física</li>
+                                    <li>Química</li>
+                                    <li>Biología</li>
+
+                               </ol> 
+    
+            <h4>Listas desordenadas</h4>   
+                        <ul>
+                             <li>Muestran la lista anteponiendo un punto, cuadrado o triángulo a cada elemento</li>
+                             <li>Comienzan con la etiqueta ul (la dir no es recomendada)</li>
+                             <li>Para cada uno de los elementos de la misma se emplea la etiqueta li</li>
+                        </ul>
+                     
+                        
+                                 Ejemplo: <br>
+                                 Valores éticos: <br>
+                        <ul>
+                             <li>Justicia</li>
+                             <li>Valentia</li>
+                             <li>Perseverancia</li>
+                        </ul>
+
+            <h4>Listas de definición</h4>    
+                        <ul>
+                              <li>Se emplean para definir términos</li>
+                              <li>Se marcan con la etiqueta dl</li>
+                              <li>Los términos de las mismas con dt</li>
+                              <li>La definición de los términos comienza con dd</li>
+                        </ul>       
+
+                        
+                
+                <h3>Enlaces en HTML (Links)</h3>
+                <h4>¿Para qué sirven?</h4>
+                <p>Los enlaces permiten la conexión con: <br>
+                   <ul>
+                       <li>Una imagen</li>
+                       <li>Un vídeo</li>
+                       <li>Un archivo de sonido</li>
+                       <li>Sitios en la web (u otra página web)</li>
+                       <li>Acceso a un programa de e-mail</li>   
+                   </ul> 
+                    
+
+                <h4>Sintaxis</h4>
+                <img src="img/Sintaxis.PNG" alt="imagen de sintaxis">
+
+                <h4>Atributos</h4>
+                <p>
+                    target: indica el lugar donde se abre el enlaces <br>
+                    name: indica un lugar dentro de una página <br>
+                </p>
+                
+
+                
+                
+                <h4>E-mail e imagen</h4>
+                <img src="img/E-mail e imagen.PNG" alt="imagen de enlaces e-mail e imagen">
+
+                <h4>Etiquetas y atributos de los enlaces</h4>
+                <img src="img/Etiquetas1.PNG" alt="imagen de etiquetas y atributos de los enlaces">
+                <img src="img/Etiqueta2.PNG" alt="imagen de etiquetas y atributos de los enlaces">
+                <img src="img/Etiqueta3.PNG" alt="imagen de etiquetas y atributos de los enlaces">
+
+
+                </p>
+            </ul>
+            
+    
+        </article>
+        <article>
+                  <h3>Mockup de mi sitio web</h3>
+                  <img src="img/Flexbox-mockup.drawio.png" alt="imagen de mockup de mi sitio web">
+
+        </article>
+
+        <footer>
+            <p>
+                Email: imperianoix@gmail.com <br>
+                Skype: bodom-55@hotmail.com <br>
+                Fecha de Actualización: Abril 21 de 2022 <br>
+            </p>
+        </footer>
+    </section>
+</body>
+</html>
